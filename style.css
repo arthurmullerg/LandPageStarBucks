@@ -1,0 +1,96 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin:0;
+}
+
+html,body{
+    height: 100%;
+    overflow-y: hidden;/*esconder o quadrado verde*/
+    overflow-x: hidden;/*esconder o quadrado verde*/
+}
+
+.center{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+header{
+    height: 200px;
+    padding: 20px 0;
+}
+.logo{
+    width: 50%;
+}
+.menu{
+    padding-top: 30px;
+    width: 50%;
+    text-align: center;
+}
+.menu a{
+    color: black;
+    margin: 5px;
+    text-decoration: none;
+    font-weight: bolder;
+    margin-right: 15px;
+    transition:0.3s ease ;
+}
+.menu a:hover{
+    color:black;
+    border-bottom: 1px solid black;
+}
+section.sobre{
+    height: calc(100% - 200px);/*ajudar a esconder o quadrado verde dimensionando ele com o tamanho da dela e tirando 200px*/
+    position: relative;
+}
+.extras{
+    position: absolute;
+    bottom:-450px;
+    right:-500px;
+    width: 1080px;
+    height: 980px; 
+    border-radius: 50%;
+    background-color: #017143;
+}
+.extras img{
+    margin-left:10px;
+    margin-top: 100px;
+}
+
+.social-media{
+    position: absolute;
+    right: 500px;
+    top:150px;  
+    margin-right: 5px;
+}
+.social-media img{
+    display: block;
+    width: 20px;
+    margin: 20px 0;
+}
+.texto-sobre{
+    margin-top: 50px;
+}
+.texto-sobre h1{
+    font-size:50px
+}
+.texto-sobre p{
+    margin:20px 0;
+    color:black;
+    font-size: 14px;
+    font-weight: bolder;
+    max-width: 500px;
+}
+.texto-sobre button{
+    background-color: #017143;
+    border-radius: 10px;
+    color:white;
+    cursor: pointer;
+    width: 100px;
+    height: 30px;
+}
+.texto-sobre button:hover{
+    background-color: #014e2e;
+}
